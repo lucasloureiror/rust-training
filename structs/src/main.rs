@@ -1,12 +1,12 @@
 use std::io;
+mod structs;
+use structs::Transaction;
+use structs::Ledger;
 
-struct Transaction {
-    id: u64,
-    amount: f64,
-    description: String,
-}
 fn main() {
-    let mut ledger: Vec<Transaction> = Vec::new();
+    let mut ledger = Ledger {
+        transactions: Vec::new(),
+    };
 
     let mut counter: u64 = 0;
 
@@ -23,7 +23,7 @@ fn main() {
             break;
         }
         if input.trim() == "2" {
-            print_ledger(&ledger);
+            ledger.print();
             continue;
         }
 
@@ -46,19 +46,7 @@ fn main() {
             description: description,
         };
 
-        ledger.push(transaction);
+        ledger.transactions.push(transaction);
         counter += 1;
     }
-}
-
-fn print_ledger(vec: &Vec<Transaction>) {
-
-        println!("\n\nLedger");
-
-        for transaction in vec {
-            println!("Id: {}", transaction.id);
-            println!("Amount: {}", transaction.amount);
-            println!("Description: {}", transaction.description);
-        }
-    
 }
