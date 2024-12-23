@@ -3,10 +3,6 @@ fn main(){
 
     let mut vetor: [usize; 100] = [0;100];
 
-   
-    
-    
-
     loop{
         println!("Digite o numero que deseja guardar na bit array ou digite Q para sair");
         let mut input = String:: new();
