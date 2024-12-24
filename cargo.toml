@@ -1,4 +1,4 @@
 [workspace]
 members = [ "data_structures",
-    "data_types", "hello_world", "input", "structs",
+    "data_types", "enums", "hello_world", "input", "structs",
 ]
