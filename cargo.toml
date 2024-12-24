@@ -1,4 +1,2 @@
 [workspace]
-members = [ "data_structures",
-    "data_types", "enums", "hello_world", "input", "structs",
-]
+members = [ "data_structures", "data_types", "enums", "hello_world", "input", "none_some", "structs",]

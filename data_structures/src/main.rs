@@ -1,3 +1,5 @@
+mod collections;
+
 fn main() {
-    println!("Hello, world!");
+    collections::vectors::main();
 }
