@@ -1,5 +1,5 @@
 use core::panic;
 
-pub fn main(){
+pub fn main() {
     panic!("Panic initialized!")
 }
